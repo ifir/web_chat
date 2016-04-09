@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
 	//入口
-	entry: './src/main.js',
+	entry: ['./src/main.js'],
 	//输出
 	output: {
 		//路径
@@ -15,7 +15,7 @@ module.exports = {
 	module: {
 		loaders: [
 			{ test: /\.vue$/, loader: 'vue'},
-			{}
+			{ test: /\.scss/, loader: 'sass'}
 		]
 	}
 }

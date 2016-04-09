@@ -4,8 +4,9 @@
   "description": "chat node socket mongodb",
   "main": "app.js",
   "scripts": {
-    "dev":"webpack-dev-server --progress --colors --hot --inline",
-    "build": "webpack -p"
+    "dev": "webpack-dev-server --progress --colors --hot --inline",
+    "build": "webpack -p",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -44,7 +45,9 @@
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
+    "express": "^4.13.4",
     "mongoose": "^4.4.11",
+    "socket.io": "^1.4.5",
     "vue": "^1.0.20"
   }
 }
